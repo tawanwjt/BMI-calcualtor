@@ -59,6 +59,8 @@ h1 {
 form {
     border: 1px solid black;
     padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .form-head {
@@ -121,4 +123,39 @@ input {
 .body_img img {
     display: none;
     max-width: 15vw;
+}
+
+.bmi_range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.under_weight, .normal_weight, .over_weight, .obese {
+    display: flex;
+    width: 100%;
+    column-gap: 3vw;
+    margin: 20px 0;
+}
+
+.shape_img img {
+    width: 10vw;
+}
+
+.details {
+    text-indent: 30px;
+}
+
+.under_weight  .range_number {
+    color: #E8B200;
+}
+.normal_weight .range_number {
+    color: rgb(75, 194, 36);
+}
+.over_weight .range_number {
+    color: #FF8000;
+}
+.obese .range_number {
+    color: #FF0000;
 }
