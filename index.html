@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="./assets/pictures/logo.png" alt="">
+            </a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="head">
+            <h1>Body Mass Index</h1>
+        </div>
+
+        <div class="content">
+            <div class="content-topic">
+                <p>BMI คืออะไร ?</p>
+            </div>
+
+            <div class="content-body">
+                <p>
+                    <strong>Body Mass Index (BMI)</strong> หรือก็คือ <strong><q>ค่าดัชนีมวลกาย</q></strong>
+                    ซึ่งจะบอกได้ว่าน้ำหนักตัวและส่วนสูงของเราอยู่ในเกณฑ์ที่เหมาะสมหรือไม่
+                    (ใช้ประเมินในผู้ใหญ่ที่มีอายุตั้งแต่ 20 ปีขึ้นไป) หรือตอนนี้เรากำลังมีน้ำหนักตัวที่ผอม, ปกติ
+                    หรือว่ากำลังมีภาวะโรคอ้วนอยู่ นอกจากค่า BMI
+                    ที่คำนวณออกมาได้จะบอกได้ว่าคุณมีรูปร่างสัดส่วนเป็นอย่างไร
+                    ยังสามารถใช้เพื่อประเมินความเสี่ยงทีจะเกิดโรคต่าง ๆ ที่เป็นปัญหาสุขภาพได้อีกด้วย
+                </p>
+                <p>
+                    โดยค่า BMI สามารถคำนวณได้จาก <strong>น้ำหนักตัว(กิโลกรัม) หารด้วยส่วนสูง(เมตร) ยกกำลัง 2</strong>
+                    ซึ่งสูตรนี้สามารถใช้ได้ทั้งผู้หญิงและผู้ชาย
+                </p>
+                <blockquote>
+                    <pre>
+                        <var>BMI</var> = <var>weight(kg)</var> / <var>height(m)<sup>2</sup></var>
+                    </pre>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+        <div class="head">
+            <h1>BMI Calculator</h1>
+        </div>
+        <form>
+            <div class="form-head">
+                <p> Input your weight and height</p>
+            </div>
+            <div class="input_box">
+                <div class="input_weight">
+                    <label for="input_weight">Your weight (kg) :</label>
+                    <input type="number" id="input_weight">
+                </div>
+                <div class="input_height">
+                    <label for="input_height">Your height (cm) :</label>
+                    <input type="number" id="input_height">
+                </div>
+                <div class="btn">
+                    <input type="button" value="Calculate" onclick="getval()">
+                </div>
+            </div>
+        </form>
+
+        <div class="bmi_result">
+            <p id="result"></p>
+            <p id="status"></p>
+        </div>
+
+        <div class="body_img">
+            <img src="./assets/pictures/body_shapes/underweight_color.png" alt="underweight_color.png" id="underweight">
+            <img src="./assets/pictures/body_shapes/weight_color.png" alt="weight_color.png" id="weight">
+            <img src="./assets/pictures/body_shapes/overweight_color.png" alt="overweight_color.png" id="overweight">
+            <img src="./assets/pictures/body_shapes/fat_color.png" alt="fat_color.png" id="fat">
+        </div>
+    </section>
+
+    <div class="divider"> </div>
+
+    <section>
+        <div class="head">
+            <h1>BMI Ranges</h1>
+        </div>
+
+        <div class="bmi_range">
+            <div class="under_weight">
+                <div class="range_number">
+                    <p><strong>น้อยกว่า 18.5</strong></p>
+                </div>
+
+                <div class="details">
+                    <p>
+                        น้ำหนักน้อยกว่าปกติ อาจเสี่ยงต่อการได้รับสารอาหารไม่เพียงพอหรือได้รับพลังงานไม่เพียงพอ
+                        ส่งผลให้ร่างกายอ่อนเพลียง่าย
+                    </p>
+                </div>
+            </div>
+            <div class="normal_weight">
+                <div class="range_number">
+                    <p><strong>18.5 - 24.9</strong></p>
+                </div>
+
+                <div class="details">
+                    <p>
+                        น้ำหนักจัดอยู่ในเกณฑ์ปกติ ห่างไกลโรคที่เกิดจากความอ้วน และมีความเสี่ยงต่อการเกิดโรคต่าง ๆ
+                        น้อยที่สุด
+                    </p>
+                </div>
+            </div>
+            <div class="over_weight">
+                <div class="range_number">
+                    <p><strong>25 - 29.9</strong></p>
+                </div>
+
+                <div class="details">
+                    <p>
+                        น้ำหนักเกิน แม้จะไม่ถึงเกณฑ์ที่ถือว่าอ้วนมาก ๆ
+                        แต่ก็ยังมีความเสี่ยงต่อการเกิดโรคที่มากับความอ้วนได้เช่นกัน ทั้งโรคเบาหวาน และความดันโลหิตสูง
+                    </p>
+                </div>
+            </div>
+            <div class="obese">
+                <div class="range_number">
+                    <p><strong>ตั้งแต่ 30 ขึ้นไป</strong></p>
+                </div>
+
+                <div class="details">
+                    <p>
+                        โรคอ้วนอันตราย เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน ได้แก่ โรคความดันโลหิตสูง
+                        ระดับโคเลสเตอรอลและระดับไตรกลีเซอไรด์ในเลือดสูง โรคเบาหวานชนิดที่ 2 โรคหลอดเลือดหัวใจ
+                        โรคหลอดเลือดสมอง โรคเกี่ยวกับถุงน้ำดี โรคข้อเข่าเสื่อม
+                        ภาวะการหยุดหายใจขณะหลับหรือปัญหาในการหายใจ และโรคมะเร็งชนิดต่าง ๆ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="script">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+body {
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+nav {
+    background-color: lightblue;
+    column-gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px 10px;
+}
+
+nav a {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    text-decoration: none;
+}
+
+nav a.logo img {
+    width: 250px;
+}
+
+.container {
+    width: 100%;
+}
+
+.divider {
+    display: block;
+    height: 5vh;
+    border: 1px solid black;
+    background-color: blueviolet;
+}
+
+.head {
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    /* color: rgb(75, 194, 36); */
+    color: lightblue;
+}
+
+.content-topic p {
+    font-weight: bold;
+}
+
+.content-body p {
+    text-indent: 30px;
+}
+
+form {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.form-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-head p {
+    font-size: 18px;
+    font-weight: bold;
+    color: lightblue;
+}
+input {
+    text-align: center;
+    display: inline;
+}
+
+.input_box {
+    text-align: center;
+}
+
+.input_box .input_weight, .input_box .input_height {
+    margin: 25px 0;
+}
+
+.btn input{
+    background-color: lightblue;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.7vw;
+    transform: scale(1.3);
+}
+
+.btn input:hover {
+    background-color: white;
+    border: 2px solid lightblue;
+    color: lightblue;
+}
+
+.bmi_result {
+    height: 20vh;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.bmi_result p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.body_img {
+    display: inline-grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.body_img img {
+    display: none;
+    max-width: 15vw;
+}
