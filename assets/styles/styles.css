@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     margin: 0%;
@@ -5,7 +9,11 @@ body {
     width: 100%;
 }
 
-nav {
+a {
+    text-decoration: none;
+}
+
+.logo {
     background-color: lightblue;
     column-gap: 40px;
     display: flex;
@@ -15,20 +23,37 @@ nav {
     padding: 15px 10px;
 }
 
-nav a {
+.logo a {
     float: left;
     font-size: 20px;
     font-weight: bold;
     margin: 5px;
-    text-decoration: none;
 }
 
-nav a.logo img {
+.logo a img {
     width: 250px;
 }
 
 .container {
     width: 100%;
+    display: flex;
+    column-gap: 20px;
+}
+
+.container nav {
+    width: 30%;
+    border: 1px solid skyblue;
+    background-color: skyblue;
+}
+
+.navbar {
+    border: 1px solid black;
+    position: sticky;
+    top: 10px;
+}
+
+.topic a {
+    color: purple;
 }
 
 .divider {
@@ -44,7 +69,6 @@ nav a.logo img {
 
 h1 {
     text-align: center;
-    /* color: rgb(75, 194, 36); */
     color: lightblue;
 }
 
@@ -89,10 +113,11 @@ input {
 .btn input{
     background-color: lightblue;
     border: 0;
-    border-radius: 5px;
+    border-radius: 15em;
     color: white;
     cursor: pointer;
     font-weight: bold;
+    font-size: 15px;
     padding: 0.7vw;
     transform: scale(1.3);
 }
