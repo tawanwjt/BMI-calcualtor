@@ -1,11 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: white;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -37,13 +41,17 @@ a {
 .container {
     width: 100%;
     display: flex;
-    column-gap: 20px;
 }
 
 .container nav {
-    width: 30%;
+    /* width: 30%; */
+    min-width: fit-content;
+    /* height: fit-content; */
+    padding: 10px;
+    margin: 0 10px 0 20px;
     border: 1px solid skyblue;
     background-color: skyblue;
+    border-radius: 30px;
 }
 
 .navbar {
@@ -64,12 +72,19 @@ a {
 }
 
 .head {
-    padding: 20px 0;
+    margin: 15px 0 10px;
 }
 
 h1 {
     text-align: center;
     color: lightblue;
+}
+
+.content {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 3em;
+    border: 1px solid black;
 }
 
 .content-topic p {
@@ -183,4 +198,12 @@ input {
 }
 .obese .range_number {
     color: #FF0000;
+}
+
+li {
+    margin-bottom: 0.6em;
+}
+
+.tip {
+    border: 1px solid saddlebrown;
 }
