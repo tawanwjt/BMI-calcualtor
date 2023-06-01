@@ -1,214 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="#">
-                <img src="./assets/pictures/logo.png" alt="logo.png">
-            </a>
+            <img src="/assets/pictures/logo.png" alt="logo" width="160px">
         </div>
     </header>
 
-    <div class="container">
-        <nav>
-            <div class="navbar">
-                <p class="topic">
-                    <a href="#bmi">Body Mass Index</a>
-                </p>
-
-                <p class="topic">
-                    <a href="#calculator">BMI Calculator</a>
-                </p>
-
-                <p class="topic">
-                    <a href="#range">BMI range</a>
-                </p>
-
-                <p class="topic">
-                    <a href="#body-fat">BMI and Body Fat</a>
-                </p>
-
-                <p class="topic">
-                    <a href="#disease">fat</a>
-                </p>
-
-                <p class="topic">
-                    <a href="#effect">effect</a>
-                </p>
-
-                <p class="topic">
-                    <a href="#suggestion">suggestion</a>
-                </p>
-            </div>
-        </nav>
-
-        <div class="block">
-            <section id="bmi">
-                <div class="head">
-                    <h1>Body Mass Index</h1>
-                </div>
-
+    <div class="body-container">
+        <div class="content">
+            <section id="content-1">
                 <div class="content">
-                    <div class="content-topic">
-                        <p>BMI คืออะไร ?</p>
+                    <div class="content-header">
+                        <h1>Body Mass Index</h1>
                     </div>
 
                     <div class="content-body">
-                        <p>
-                            <strong>Body Mass Index (BMI)</strong> หรือก็คือ <strong><q>ค่าดัชนีมวลกาย</q></strong>
-                            ซึ่งจะบอกได้ว่าน้ำหนักตัวและส่วนสูงของเราอยู่ในเกณฑ์ที่เหมาะสมหรือไม่
-                            (ใช้ประเมินในผู้ใหญ่ที่มีอายุตั้งแต่ 20 ปีขึ้นไป) หรือตอนนี้เรากำลังมีน้ำหนักตัวที่ผอม, ปกติ
-                            หรือว่ากำลังมีภาวะโรคอ้วนอยู่ นอกจากค่า BMI
-                            ที่คำนวณออกมาได้จะบอกได้ว่าคุณมีรูปร่างสัดส่วนเป็นอย่างไร
-                            ยังสามารถใช้เพื่อประเมินความเสี่ยงทีจะเกิดโรคต่าง ๆ ที่เป็นปัญหาสุขภาพได้อีกด้วย
-                        </p>
-                        <p>
-                            โดยค่า BMI สามารถคำนวณได้จาก <strong>น้ำหนักตัว(กิโลกรัม) หารด้วยส่วนสูง(เมตร) ยกกำลัง
-                                2</strong>
-                            ซึ่งสูตรนี้สามารถใช้ได้ทั้งผู้หญิงและผู้ชาย
-                        </p>
-                        <blockquote>
-                            <pre>
-                                <var>BMI</var> = <var>weight(kg)</var> / <var>height(m)<sup>2</sup></var>
-                            </pre>
-                        </blockquote>
+                        <div class="content-1-img">
+                            <img src="/assets/pictures/bmi.png" alt="what is bmi" width="100px">
+                        </div>
+
+                        <div class="content-1-details">
+                            <p>
+                                <strong>BMI คืออะไร ?</strong>
+                            </p>
+                            <p>
+                                <strong>Body Mass Index (BMI)</strong> หรือก็คือ <strong>”ค่าดัชนีมวลกาย”</strong>
+                                ซึ่งจะบอกได้ว่าน้ำหนักตัวและส่วนสูงของเราอยู่ใน
+                                เกณฑ์ที่เหมาะสมหรือไม่(ใช้ประเมินในผู้ใหญ่ที่มีอายุ ตั้งแต่ 20
+                                ปีขึ้นไป)หรือตอนนี้เรากำลังมีน้ำหนักตัวที่ผอม, ปกติ
+                                หรือว่ากำลังมีภาวะโรคอ้วนอยู่ นอกจากค่า BMI
+                                ที่คำนวณออกมาได้จะบอกได้ว่าคุณมีรูปร่างสัดส่วน
+                                เป็นอย่างไรยังสามารถใช้เพื่อประเมินความเสี่ยงทีจะ
+                                เกิดโรคต่าง ๆ ที่เป็นปัญหาสุขภาพได้อีกด้วย
+                            </p>
+                            <p>
+                                โดยค่า BMI สามารถคำนวณได้จาก <strong>น้ำหนักตัว(กิโลกรัม) หารด้วยส่วนสูง(เมตร) ยกกำลัง
+                                    2</strong>
+                                ซึ่งสูตรนี้สามารถใช้ได้ทั้งผู้หญิงและผู้ชาย
+                            </p>
+                            <blockquote>
+                                <pre>
+                                    <var>BMI</var> = <var>weight(kg)</var> / <var>height(m)<sup>2</sup></var>
+                                </pre>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <div class="divider"></div>
 
-            <section id="calculator">
-                <div class="head">
-                    <h1>BMI Calculator</h1>
-                </div>
-
+            <section id="content-2">
                 <div class="content">
-                    <form>
-                        <div class="form-head">
-                            <p> Input your weight and height</p>
-                        </div>
-                        <div class="input_box">
-                            <div class="input_weight">
-                                <label for="input_weight">Your weight (kg) :</label>
-                                <input type="number" id="input_weight">
-                            </div>
-                            <div class="input_height">
-                                <label for="input_height">Your height (cm) :</label>
-                                <input type="number" id="input_height">
-                            </div>
-                            <div class="btn">
-                                <input type="button" value="Calculate" onclick="getval()">
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="bmi_result">
-                        <p id="result"></p>
-                        <p id="status"></p>
+                    <div class="content-header">
+                        <h1>BMI Calculator</h1>
                     </div>
-
-                    <div class="body_img">
-                        <img src="./assets/pictures/body_shapes/underweight_color.png" alt="underweight_color.png"
-                            id="underweight">
-                        <img src="./assets/pictures/body_shapes/weight_color.png" alt="weight_color.png" id="weight">
-                        <img src="./assets/pictures/body_shapes/overweight_color.png" alt="overweight_color.png"
-                            id="overweight">
-                        <img src="./assets/pictures/body_shapes/fat_color.png" alt="fat_color.png" id="fat">
-                    </div>
-                </div>
-            </section>
-
-            <div class="divider"> </div>
-
-            <section id="range">
-                <div class="head">
-                    <h1>BMI Range</h1>
-                </div>
-
-                <div class="content">
-                    <div class="bmi_range">
-                        <div class="under_weight">
-                            <div class="shape_img">
-                                <img src="./assets/pictures/body_shapes/underweight_color.png" alt="underweight.png">
-                            </div>
-
-                            <div class="txt">
-                                <div class="range_number">
-                                    <p><strong>น้อยกว่า 18.5</strong></p>
+                    <div class="content-body">
+                        <div class="form">
+                            <form>
+                                <div class="form-header">
+                                    <p><strong>Input your weight and height</strong></p>
                                 </div>
-
-                                <div class="details">
-                                    <p>
-                                        น้ำหนักน้อยกว่าปกติ
-                                        อาจเสี่ยงต่อการได้รับสารอาหารไม่เพียงพอหรือได้รับพลังงานไม่เพียงพอ
-                                        ส่งผลให้ร่างกายอ่อนเพลียง่าย
-                                    </p>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <label for="weight"><strong>Weight</strong></label>
+                                        <input type="number" name="weight" id="weight" placeholder="Your weight (kg)">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="height"><strong>Height</strong></label>
+                                        <input type="number" name="height" id="height" placeholder="Your height (cm)">
+                                    </div>
+                                    <div class="btn">
+                                        <input type="button" value="Calculate">
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="normal_weight">
-                            <div class="shape_img">
-                                <img src="./assets/pictures/body_shapes/weight_color.png" alt="weight.png">
-                            </div>
-                            <div class="txt">
-                                <div class="range_number">
-                                    <p><strong>18.5 - 24.9</strong></p>
-                                </div>
+                            </form>
 
-                                <div class="details">
-                                    <p>
-                                        น้ำหนักจัดอยู่ในเกณฑ์ปกติ ห่างไกลโรคที่เกิดจากความอ้วน
-                                        และมีความเสี่ยงต่อการเกิดโรคต่าง ๆ
-                                        น้อยที่สุด
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="over_weight">
-                            <div class="shape_img">
-                                <img src="./assets/pictures/body_shapes/overweight_color.png" alt="overweight.png">
-                            </div>
+                            <div class="result">
+                                <p id="result">___BMI RESULT___</p>
+                                <p id="status">___BMI STATUS___</p>
 
-                            <div class="txt">
-                                <div class="range_number">
-                                    <p><strong>25 - 29.9</strong></p>
-                                </div>
-
-                                <div class="details">
-                                    <p>
-                                        น้ำหนักเกิน แม้จะไม่ถึงเกณฑ์ที่ถือว่าอ้วนมาก ๆ
-                                        แต่ก็ยังมีความเสี่ยงต่อการเกิดโรคที่มากับความอ้วนได้เช่นกัน ทั้งโรคเบาหวาน
-                                        และความดันโลหิตสูง
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="obese">
-                            <div class="shape_img">
-                                <img src="./assets/pictures/body_shapes/fat_color.png" alt="fat.png">
-                            </div>
-
-                            <div class="txt">
-                                <div class="range_number">
-                                    <p><strong>ตั้งแต่ 30 ขึ้นไป</strong></p>
-                                </div>
-
-                                <div class="details">
-                                    <p>
-                                        โรคอ้วนอันตราย เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน ได้แก่
-                                        โรคความดันโลหิตสูง
-                                        ระดับโคเลสเตอรอลและระดับไตรกลีเซอไรด์ในเลือดสูง โรคเบาหวานชนิดที่ 2
-                                        โรคหลอดเลือดหัวใจ
-                                        โรคหลอดเลือดสมอง โรคเกี่ยวกับถุงน้ำดี โรคข้อเข่าเสื่อม
-                                        ภาวะการหยุดหายใจขณะหลับหรือปัญหาในการหายใจ และโรคมะเร็งชนิดต่าง ๆ
-                                    </p>
+                                <div class="body_img">
+                                    <img src="./assets/pictures/body_shapes/underweight_color.png"
+                                        alt="underweight_color.png" id="underweight" width="150px">
+                                    <img src="./assets/pictures/body_shapes/weight_color.png" alt="weight_color.png"
+                                        id="weight" width="150px">
+                                    <img src="./assets/pictures/body_shapes/overweight_color.png"
+                                        alt="overweight_color.png" id="overweight" width="150px">
+                                    <img src="./assets/pictures/body_shapes/fat_color.png" alt="fat_color.png" id="fat"
+                                        width="150px">
                                 </div>
                             </div>
                         </div>
@@ -216,17 +106,82 @@
                 </div>
             </section>
 
-            <div class="divider"> </div>
+            <div class="divider"></div>
 
-            <section id="body-fat">
-                <div class="head">
-                    <h1>ค่า BMI และ ปริมาณไขมันในร่างกาย</h1>
-                </div>
-
+            <section id="content-3">
                 <div class="content">
-                    <!-- <div class="content-topic">
-                        <p>ค่า BMI และ ปริมาณไขมันในร่างกาย</p>
-                    </div> -->
+                    <div class="content-header">
+                        <h1>BMI Range</h1>
+                    </div>
+
+                    <div class="content-body">
+                        <div class="weight" id="underweight">
+                            <div class="weight-img">
+                                <img src="/assets/pictures/body_shapes/underweight_color.png"
+                                    alt="underweight body_shape" width="100px">
+                            </div>
+                            <p class="range_number">
+                                <strong>น้อยกว่า 18.5</strong>
+                            </p>
+                            <p class="range-detail">
+                                น้ำหนักน้อยกว่าปกติ
+                                อาจเสี่ยงต่อการได้รับสารอาหารไม่เพียงพอหรือได้รับพลังงานไม่เพียงพอ
+                                ส่งผลให้ร่างกายอ่อนเพลียง่าย
+                            </p>
+                        </div>
+                        <div class="weight" id="normalweight">
+                            <div class="weight-img">
+                                <img src="/assets/pictures/body_shapes/weight_color.png" alt="weight body_shape"
+                                    width="100px">
+                            </div>
+                            <p class="range_number">
+                                <strong>18.5 - 24.9</strong>
+                            </p>
+                            <p class="range-detail">
+                                น้ำหนักจัดอยู่ในเกณฑ์ปกติ ห่างไกลโรคที่เกิดจากความอ้วน และมีความเสี่ยงต่อการเกิดโรคต่าง
+                                ๆ น้อยที่สุด
+                            </p>
+                        </div>
+                        <div class="weight" id="overweight">
+                            <div class="weight-img">
+                                <img src="/assets/pictures/body_shapes/overweight_color.png" alt="overweight body_shape"
+                                    width="100px">
+                            </div>
+                            <p class="range_number">
+                                <strong>25 - 29.9</strong>
+                            </p>
+                            <p class="range-detail">
+                                น้ำหนักเกิน แม้จะไม่ถึงเกณฑ์ที่ถือว่าอ้วนมาก ๆ
+                                แต่ก็ยังมีความเสี่ยงต่อการเกิดโรคที่มากับความอ้วน
+                                ได้เช่นกัน ทั้งโรคเบาหวาน และความดันโลหิตสูง
+                            </p>
+                        </div>
+                        <div class="weight" id="obese">
+                            <div class="weight-img">
+                                <img src="/assets/pictures/body_shapes/fat_color.png" alt="obese body_shape"
+                                    width="100px">
+                            </div>
+                            <p class="range_number">
+                                <strong>ตั้งแต่ 30 ขึ้นไป</strong>
+                            </p>
+                            <p class="range-detail">
+                                โรคอ้วนอันตราย เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน ได้แก่ โรคความดันโลหิตสูง
+                                ระดับโคเลสเตอรอลและระดับไตรกลีเซอไรด์ในเลือดสูง โรคเบาหวานชนิดที่ 2 โรคหลอดเลือดหัวใจ
+                                โรคหลอดเลือดสมอง โรคเกี่ยวกับถุงน้ำดี โรคข้อเข่าเสื่อม
+                                ภาวะการหยุดหายใจขณะหลับหรือปัญหาในการหายใจ และโรคมะเร็งชนิดต่าง ๆ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section id="content-4">
+                <div class="content">
+                    <div class="content-header">
+                        <h1>ค่า BMI และ ปริมาณไขมันในร่างกาย</h1>
+                    </div>
 
                     <div class="content-body">
                         <p>
@@ -235,247 +190,254 @@
                             อาจจะมีน้ำหนักเยอะก็จริง แต่น้ำหนักที่มากนั้นกลับมาจากมวลกล้ามเนื้อมากกว่าไขมัน
                             แต่าเราสามารถหาค่าปริมาณไขมันได้ โดยนำค่า BMI ที่ได้มาคำนวณหาเปอร์เซนต์ไขมัน
                         </p>
-                        <p>
                         <ul>
                             <li>
-                                ปริมาณไขมันสำหรับ <strong><q>ผู้ชาย</q></strong> = (1.2 x
-                                <var><strong>BMI</strong></var>) + (0.23 x <var><strong>Age</strong></var>) – 16.2
+                                ปริมาณไขมันสำหรับ “ผู้ชาย” = (1.2 x BMI) + (0.23 x Age) – 16.2
                             </li>
                             <li>
-                                ปริมาณไขมันสำหรับ <strong><q>ผู้หญิง</q></strong> = (1.2 x
-                                <var><strong>BMI</strong></var>) + (0.23 x <var><strong>Age</strong></var>) – 5.4
+                                ปริมาณไขมันสำหรับ “ผู้หญิง” = (1.2 x BMI) + (0.23 x Age) – 5.4
                             </li>
                         </ul>
-                        </p>
-                        <blockquote>
+                        <p>
                             ซึ่งปริมาณไขมันที่ผู้ชายปกติควรจะมีเท่ากับ 15-20% และผู้หญิงเท่ากับ 25-30%
-                        </blockquote>
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <div class="divider"> </div>
+            <div class="divider"></div>
 
-            <section id="disease">
-                <div class="head">
-                    <h1>ภาวะโรคอ้วน</h1>
-                </div>
-
+            <section id="content-5">
                 <div class="content">
-                    <article>
-                        <div class="content-topic">
-                            <p>ภาวะโรคอ้วน คืออะไร ?</p>
-                        </div>
-                        <div class="content-body">
-                            <p>
-                                <strong>ภาวะโรคอ้วน คือ</strong>
-                                การที่ร่างกายของเรามีไขมันสะสมอยู่ทั่วร่างกายเป็นปริมาณมากเกินกว่าที่ร่างกายจะเผาผลาญได้หมด
-                                คนส่วนใหญ่ที่เป็นโรคอ้วนมักจะมีหน้าท้องใหญ่หรือ <q>อ้วนลงพุง</q>
-                                นอกจากนี้ยังพบว่าในประเทศไทยมีประชากรที่มีภาวะโรคอ้วนมากถึง <em>25%</em>
-                                หรือคิดเป็นร้อยละ
-                                <em>48.28</em>
-                                ซึ่งตัวเลขเหล่านี้ทำให้เรา<strong>ติดอันดับ 2 ในอาเซียน!</strong>
+                    <div class="content-header">
+                        <h1>ภาวะโรคอ้วน</h1>
+                    </div>
 
-                                และมีแนวโน้มที่จะสูงขึ้นเรื่อย ๆ
-                                จนทำให้ประเทศไทยมีจำนวนผู้ป่วยโรคเบาหวานแตะถึงหลักล้านคน
-                                รวมไปถึงการเสียชีวิตจากโรคเบาหวานมากกว่า 200 คน/วัน
-                                โดยโรคอ้วนเกิดได้จากสาเหตุมากมายดังนี้
-                            </p>
-                            <p>
-                            <ol>
-                                <li>
-                                    <strong>กรรมพันธุ์</strong>
-                                    <p>
-                                        หากพ่อและแม่มีภาวะโรคอ้วนจะทำให้ลูกที่เกิดมามีความเสี่ยงที่จะอ้วนได้ง่ายกว่าคนปกติ
-                                        <strong>อย่างไรก็ตาม</strong> กรรมพันธุ์ไม่ใช่ปัจจัยหลักที่ทำให้อ้วน 100%
-                                        (มีผลเพียง
-                                        40-70% เท่านั้น)
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>อายุ</strong>
-                                    <p>
-                                        เมื่ออายุมากขึ้น ฮอร์โมนในร่างกายจะเริ่มมีการเปลี่ยนแปลง
-                                        ซึ่งจะทำให้ระบบเผาผลาญทำงานได้ไม่ดีเหมือนเด็ก ๆ หรือหนุ่มสาวทั่วไป
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>พฤติกรรมการรับประทานอาหาร</strong>
-                                    <p>
-                                        เป็นหนึ่งปัจจัยที่เห็นได้ชัด โดยเฉพาะคนที่ชอบทานอาหารที่มีแคลอรี่สูงจำพวกแป้ง
-                                        ไขมัน
-                                        และน้ำตาลมากเกินความต้องการของร่างกาย
-                                        จนทำให้ร่างกายไม่สามารถเผาผลาญได้หมดและเกิดเป็นไขมันสะสม
-                                        ซึ่งโดยปกติแล้วร่างกายต้องการพลังงาน 2,500 kCal ต่อวันสำหรับผู้ชาย และ
-                                        2,000 kCal ต่อวันสำหรับผู้หญิง
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>การใช้ชีวิต</strong>
-                                    <p>
-                                        การออกกำลังกายเป็นประจำเป็นสิ่งที่ดีต่อร่างกายและสัดส่วน
-                                        แต่เรมักจะละเลย หรือในบางรายอาจมีข้อจำกัดอื่น ๆ
-                                        ทำให้ไม่สามารถออกกำลังกายได้ เช่น คนที่มีอาการป่วยต่าง ๆ
-                                        จนไม่สามารถเคลื่อนไหวร่างกายได้ตามปกติ
-                                        รวมไปถึงการพักผ่อนไม่เพียงพอซึ่งจะส่งผลกระทบกับฮอร์โมน
-                                        ทำให้เกิดความอยากอาหารมากขึ้น
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>โรคบางชนิด</strong>
-                                    <p>
-                                        การเกิดโรคบางชนิดอาจเป็นสาเหตุให้เกิดภาวะโรคอ้วนได้ เช่น โรคไทรอยด์ชนิดอ้วน
-                                        ที่ทำให้ระบบเผาผลาญทำงานได้น้อยลง รวมไปถึงโรคคุชชิ่งซินโดรม (Cushing’s Syndrome)
-                                        มีผลให้มีฮอร์โมนคอร์ติซอลสูงซึ่งเป็นตัวกระตุ้นทำให้เกิดความอยากอาหารที่สูงขึ้น
-                                        รวมไปถึงเป็นตัวการปั่นป่วนระบบเผาผลาญในร่างกาย
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>ยารักษาโรคบางชนิด</strong>
-                                    <p>
-                                        ยารักษาโรคบางชนิดอาจทำให้มีความอยากอาหารมากขึ้น หรือมีการเผาผลาญได้น้อยลง เช่น
-                                        ยาต้านอาการซึมเศร้า, ยาลดความดันโลหิต หรือยาที่รักษาโรคภูมแพ้, ยาคุมกำเนิด
-                                        และยารักษาโรคเบาหวาน ฯลฯ
-                                    </p>
-                                </li>
-                            </ol>
-                            </p>
-                        </div>
-                    </article>
+                    <div class="content-body">
+                        <article id="obesity">
+                            <div class="obesity">
+                                <h3 class="article-topic">
+                                    ภาวะโรคอ้วน คืออะไร ?
+                                </h3>
+                                <p class="article-detail">
+                                    ภาวะโรคอ้วน คือ
+                                    การที่ร่างกายของเรามีไขมันสะสมอยู่ทั่วร่างกายเป็นปริมาณมากเกินกว่าที่ร่างกายจะเผาผลาญได้หมด
+                                    คนส่วนใหญ่ที่เป็นโรคอ้วนมักจะมีหน้าท้องใหญ่หรือ อ้วนลงพุง
+                                    นอกจากนี้ยังพบว่าในประเทศไทยมีประชากรที่มีภาวะโรคอ้วนมากถึง 25% หรือคิดเป็นร้อยละ
+                                    48.28 ซึ่งตัวเลขเหล่านี้ทำให้เราติดอันดับ 2 ในอาเซียน!
+                                    และมีแนวโน้มที่จะสูงขึ้นเรื่อย ๆ
+                                    จนทำให้ประเทศไทยมีจำนวนผู้ป่วยโรคเบาหวานแตะถึงหลักล้านคน
+                                    รวมไปถึงการเสียชีวิตจากโรคเบาหวานมากกว่า 200 คน/วัน
+                                    โดยโรคอ้วนเกิดได้จากสาเหตุมากมายดังนี้
+                                <ol>
+                                    <li>
+                                        <strong>กรรมพันธุ์</strong>
+                                        <p>
+                                            หากพ่อและแม่มีภาวะโรคอ้วนจะทำให้ลูกที่เกิดมามีความเสี่ยงที่จะอ้วนได้ง่ายกว่าคนปกติ
+                                            <strong>อย่างไรก็ตาม</strong> กรรมพันธุ์ไม่ใช่ปัจจัยหลักที่ทำให้อ้วน 100%
+                                            (มีผลเพียง 40-70%
+                                            เท่านั้น)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>อายุ</strong>
+                                        <p>
+                                            เมื่ออายุมากขึ้น ฮอร์โมนในร่างกายจะเริ่มมีการเปลี่ยนแปลง
+                                            ซึ่งจะทำให้ระบบเผาผลาญทำงานได้ไม่ดีเหมือนเด็ก ๆ หรือหนุ่มสาวทั่วไป
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>พฤติกรรมการรับประทานอาหาร</strong>
+                                        <p>
+                                            เป็นหนึ่งปัจจัยที่เห็นได้ชัด
+                                            โดยเฉพาะคนที่ชอบทานอาหารที่มีแคลอรี่สูงจำพวกแป้ง ไขมัน
+                                            และน้ำตาลมากเกินความต้องการของร่างกาย
+                                            จนทำให้ร่างกายไม่สามารถเผาผลาญได้หมดและเกิดเป็นไขมันสะสม
+                                            ซึ่งโดยปกติแล้วร่างกายต้องการพลังงาน 2,500 kCal ต่อวันสำหรับผู้ชาย และ 2,000
+                                            kCal
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>การใช้ชีวิต</strong>
+                                        <p>
+                                            การออกกำลังกายเป็นประจำเป็นสิ่งที่ดีต่อร่างกายและสัดส่วน แต่เรมักจะละเลย
+                                            หรือในบางรายอาจมีข้อจำกัดอื่น ๆ ทำให้ไม่สามารถออกกำลังกายได้ เช่น
+                                            คนที่มีอาการป่วยต่าง ๆ จนไม่สามารถเคลื่อนไหวร่างกายได้ตามปกติ
+                                            รวมไปถึงการพักผ่อนไม่เพียงพอซึ่งจะส่งผลกระทบกับฮอร์โมน
+                                            ทำให้เกิดความอยากอาหารมากขึ้น
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>โรคบางชนิด</strong>
+                                        <p>
+                                            การเกิดโรคบางชนิดอาจเป็นสาเหตุให้เกิดภาวะโรคอ้วนได้ เช่น โรคไทรอยด์ชนิดอ้วน
+                                            ที่ทำให้ระบบเผาผลาญทำงานได้น้อยลง รวมไปถึงโรคคุชชิ่งซินโดรม (Cushing’s
+                                            Syndrome)
+                                            มีผลให้มีฮอร์โมนคอร์ติซอลสูงซึ่งเป็นตัวกระตุ้นทำให้เกิดความอยากอาหารที่สูงขึ้น
+                                            รวมไปถึงเป็นตัวการปั่นป่วนระบบเผาผลาญในร่างกาย
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>ยารักษาโรคบางชนิด</strong>
+                                        <p>
+                                            ยารักษาโรคบางชนิดอาจทำให้มีความอยากอาหารมากขึ้น หรือมีการเผาผลาญได้น้อยลง
+                                            เช่น ยาต้านอาการซึมเศร้า, ยาลดความดันโลหิต หรือยาที่รักษาโรคภูมแพ้,
+                                            ยาคุมกำเนิด และยารักษาโรคเบาหวาน ฯลฯ
+                                        </p>
+                                    </li>
+                                </ol>
+                                </p>
+                            </div>
 
-                    <article id="effect">
-                        <div class="content-topic">
-                            <p>ภาวะโรคอ้วนส่งผลกระทบต่อร่างกายอย่างไร ?</p>
-                        </div>
-                        <div class="content-body">
-                            <p>
-                            <ol>
-                                <li>
-                                    <strong>รูปร่าง</strong>
-                                    <p>
-                                        ความอ้วนมักมาพร้อมกับไขมันใต้ผิวหนังที่สะสมอยู่ทั่วร่างกาย
-                                        จนทำให้รูปร่างและสัดส่วนของเราใหญ่ขึ้น
-                                        และส่งผลให้หลายคนขาดความมั่นใจในการสวมใส่เสื้อผ้าอีกด้วย
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>สุขภาพกาย</strong>
-                                    <p>
-                                        เมื่อเกิดภาวะโรคอ้วนแล้ว จะมีโรคต่างๆที่ตามมาพร้อมกับความอ้วน ได้แก่
-                                        โรคที่เกี่ยวกับระบบหลอดเลือด โรคเกี่ยวกับระบบทางเดินหายใจ
-                                        และยังมีความเสี่ยงที่จะเกิดโรคเบาหวานและโรคความดันโลหิตสูงมากกว่าคนปกติ 2-10
-                                        เท่า
-                                        รวมไปถึงโรคที่เกี่ยวกับกระดูกและข้อ เช่น อาการปวดขา ปวดหลัง หรือปวดข้อเข่า
-                                        เนื่องจากร่างกายต้องรับน้ำหนักที่มากขึ้น
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>สุขภาพจิต</strong>
-                                    <p>
-                                        ขาดความมั้นใจในการเข้าสังคม เก็บตัว กลายเป็นคนโลกส่วนตัวสูง ไม่กล้าพบปะผู้คน
-                                        ส่งผลกระทบต่อความสัมพันธ์จนอาจทำให้พลาดโอกาสในเรื่องต่าง ๆ ไป
-                                        และอาจส่งผลร้ายแรงถึงขั้นเป็นโรคซึมเศร้าได้
-                                    </p>
-                                </li>
-                            </ol>
-                            </p>
+                        </article>
 
-                            <div class="tip">
-                                <div class="tip-head">
-                                    <p><strong>ไขมันในร่างกายแบ่งเป็น 3 ประเภทหลัก ดังนี้</strong></p>
+                        <article id="effect">
+                            <div class="effect">'
+                                <div class="article-topic">
+                                    <h3>ภาวะโรคอ้วนส่งผลกระทบต่อร่างกายอย่างไร ?</h3>
                                 </div>
-                                <div class="tip-detail">
+
+                                <div class="article-detail">
+                                    <ol>
+                                        <li>
+                                            <strong>รูปร่าง</strong>
+                                            <p>
+                                                ความอ้วนมักมาพร้อมกับไขมันใต้ผิวหนังที่สะสมอยู่ทั่วร่างกาย
+                                                จนทำให้รูปร่างและสัดส่วนของเราใหญ่ขึ้น
+                                                และส่งผลให้หลายคนขาดความมั่นใจในการสวมใส่เสื้อผ้าอีกด้วย
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <strong>สุขภาพกาย</strong>
+                                            <p>
+                                                เมื่อเกิดภาวะโรคอ้วนแล้ว จะมีโรคต่างๆที่ตามมาพร้อมกับความอ้วน ได้แก่
+                                                โรคที่เกี่ยวกับระบบหลอดเลือด โรคเกี่ยวกับระบบทางเดินหายใจ
+                                                และยังมีความเสี่ยงที่จะเกิดโรคเบาหวานและโรคความดันโลหิตสูงมากกว่าคนปกติ
+                                                2-10 เท่า รวมไปถึงโรคที่เกี่ยวกับกระดูกและข้อ เช่น อาการปวดขา ปวดหลัง
+                                                หรือปวดข้อเข่า เนื่องจากร่างกายต้องรับน้ำหนักที่มากขึ้น
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <strong>สุขภาพจิต</strong>
+                                            <p>
+                                                ขาดความมั้นใจในการเข้าสังคม เก็บตัว กลายเป็นคนโลกส่วนตัวสูง
+                                                ไม่กล้าพบปะผู้คน
+                                                ส่งผลกระทบต่อความสัมพันธ์จนอาจทำให้พลาดโอกาสในเรื่องต่าง ๆ ไป
+                                                และอาจส่งผลร้ายแรงถึงขั้นเป็นโรคซึมเศร้าได้
+                                            </p>
+                                        </li>
+                                    </ol>
+
+                                    <div class="tip">
+                                        <strong><q>ไขมันในร่างกาย</q></strong> แบ่งเป็น 3 ประเภทหลัก ดังนี้
+                                        <ul>
+                                            <li>
+                                                <strong>ไขมันใต้ผิวหนัง</strong>
+                                                <p>
+                                                    เป็นไขมันส่วนเกินที่ไม่ก่อให้เกิดอันตรายต่อสุขภาพ
+                                                    แต่จะมีผลกระทบความสวยงามของสัดส่วน เช่น
+                                                    บริเวณต้นแขน, ต้นขา, สะโพก หรือหน้าท้อง ฯลฯ
+                                                    <strong><q>เป็นไขมันที่กำจัดได้ง่าย</q></strong>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <strong>ไขมันในช่องท้อง</strong>
+                                                <p>
+                                                    เป็นไขมันที่สะสมอยู่ลึกกว่าในชั้นใต้ผิวหนัง ซึ่งจะเกาะอยู่รอบ ๆ
+                                                    อวัยวะภายในต่าง ๆ เช่น กระเพาะอาหาร ตับ
+                                                    ลำไส้เล็ก โดยคนที่มีหน้าท้องใหญ่มาก ๆ
+                                                    และมีไขมันในช่องท้องจะทำให้เสี่ยงต่อการเกิดโรคต่าง ๆ อาทิเบาหวาน,
+                                                    โรคหัวใจ, โรคหลอดเลือดในสมอง ฯลฯ
+                                                    <strong><q>เป็นไขมันที่อันตรายที่สุด</q></strong>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <strong>ไขมันในหลอดเลือด</strong>
+                                                <p>
+                                                    หากมีปริมาณที่สูงมากจนเกินไปจะส่งผลให้เกิด
+                                                    <strong><q>ภาวะไขมันในเส้นเลือดสูง</q></strong>
+                                                    ส่งผลให้เกิดโรคหัวใจและหลอดเลือดอุดตัน
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="suggestion">
+                            <div class="suggestion">
+                                <div class="article-topic">
+                                    <h3>แล้วเราจะรับมือกับภาวะโรคอ้วนอย่างปลอดภัยได้อย่างไร ?</h3>
+                                </div>
+
+                                <div class="article-detail">
                                     <ul>
                                         <li>
-                                            <strong>ไขมันใต้ผิวหนัง</strong>
+                                            <strong>ปรับการรับประทานอาหาร</strong>
                                             <p>
-                                                เป็นไขมันส่วนเกินที่ไม่ก่อให้เกิดอันตรายต่อสุขภาพ
-                                                แต่จะมีผลกระทบความสวยงามของสัดส่วน เช่น บริเวณต้นแขน, ต้นขา, สะโพก
-                                                หรือหน้าท้อง ฯลฯ
-                                                <strong class="important"><q>เป็นไขมันที่กำจัดได้ง่าย</q></strong>
+                                                นับแคลอรี่ และหลีกเลี่ยงหรือลดอาหารประเภทแป้ง ไขมัน และน้ำตาล
                                             </p>
                                         </li>
                                         <li>
-                                            <strong>ไขมันในช่องท้อง</strong>
+                                            <strong>ออกกำลังกาย</strong>
+                                            <p> ออกกำลังกายอย่างน้อยครั้งละ 45-60 นาที สัปดาห์ละ 3-4 วัน</p>
+                                        </li>
+                                        <li>
+                                            <strong>ปรับพฤติกรรม</strong>
                                             <p>
-                                                เป็นไขมันที่สะสมอยู่ลึกกว่าในชั้นใต้ผิวหนัง ซึ่งจะเกาะอยู่รอบ ๆ
-                                                อวัยวะภายในต่าง ๆ เช่น กระเพาะอาหาร ตับ ลำไส้เล็ก
-                                                โดยคนที่มีหน้าท้องใหญ่มาก
-                                                ๆ และมีไขมันในช่องท้องจะทำให้เสี่ยงต่อการเกิดโรคต่าง ๆ อาทิเบาหวาน,
-                                                โรคหัวใจ, โรคหลอดเลือดในสมอง ฯลฯ
-                                                <strong class="important"><q>เป็นไขมันที่อันตรายที่สุด</q></strong>
+                                                หลีกเลี่ยงความเครียด, ดื่มน้ำอย่างน้อย 2-3 ลิตร/วัน, เดินแทนการใช้ลิฟท์,
+                                                พักผ่อนให้เพียงพอ
+                                                และหลีกเลี่ยงการดื่มแอลกอฮอล์ รวมไปถึงการสูบบุหรี่
                                             </p>
                                         </li>
                                         <li>
-                                            <strong>ไขมันในหลอดเลือด</strong>
+                                            <strong>ปรึกษาแพทย์ผู้เชี่ยวชาญ</strong>
                                             <p>
-                                                หากมีปริมาณที่สูงมากจนเกินไปจะส่งผลให้เกิด
-                                                <strong class="important"><q>ภาวะไขมันในเส้นเลือดสูง</q></strong>
-                                                ส่งผลให้เกิดโรคหัวใจและหลอดเลือดอุดตัน
+                                                กรณีที่โรคอ้วนเกิดจากสาเหตุของโรคบางชนิดหรือเกิดจากความผิดปกติอื่น ๆ
+                                                ในร่างกาย
+                                                ต้องปรึกษาแพทย์เพื่อที่จะได้รับคำแนะนำที่ถูกต้อง
+                                                และปลอดภัย
                                             </p>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-
-                    <article id="suggestion">
-                        <div class="content-topic">
-                            <p>แล้วเราจะรับมือกับภาวะโรคอ้วนอย่างปลอดภัยได้อย่างไร ?</p>
-                        </div>
-                        <div class="content-body">
-                            <p>
-                            <ul>
-                                <li>
-                                    <strong>ปรับการรับประทานอาหาร</strong>
-                                    <p>
-                                        นับแคลอรี่ และหลีกเลี่ยงหรือลดอาหารประเภทแป้ง ไขมัน และน้ำตาล
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>ออกกำลังกาย</strong>
-                                    <p>
-                                        ออกกำลังกายอย่างน้อยครั้งละ 45-60 นาที สัปดาห์ละ 3-4 วัน
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>ปรับพฤติกรรม</strong>
-                                    <p>
-                                        หลีกเลี่ยงความเครียด, ดื่มน้ำอย่างน้อย 2-3 ลิตร/วัน, เดินแทนการใช้ลิฟท์,
-                                        พักผ่อนให้เพียงพอ และหลีกเลี่ยงการดื่มแอลกอฮอล์ รวมไปถึงการสูบบุหรี่
-                                    </p>
-                                </li>
-                                <li>
-                                    <strong>ปรึกษาแพทย์ผู้เชี่ยวชาญ</strong>
-                                    <p>
-                                        กรณีที่โรคอ้วนเกิดจากสาเหตุของโรคบางชนิดหรือเกิดจากความผิดปกติอื่น ๆ ในร่างกาย
-                                        ต้องปรึกษาแพทย์เพื่อที่จะได้รับคำแนะนำที่ถูกต้องและปลอดภัย
-                                    </p>
-                                </li>
-                            </ul>
-                            </p>
-                    </article>
+                        </article>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
 
-    <div class="script">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"></script>
+    <footer>
+        <div class="logo">
+            <img src="/assets/pictures/logo.png" alt="logo" width="160px">
+        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-            crossorigin="anonymous"></script>
+        <div class="line"></div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-            crossorigin="anonymous"></script>
+        <div class="social">
+            <div class="social-icon">
+                <a href="#">
+                    <img src="/assets/pictures/social_media/facebook.png" alt="facebook" width="40px">
+                </a>
+                <a href="#">
+                    <img src="/assets/pictures/social_media/instagram.png" alt="instagram" width="40px">
+                </a>
+                <a href="#">
+                    <img src="/assets/pictures/social_media/github.png" alt="github" width="40px">
+                </a>
+                <a href="#">
+                    <img src="/assets/pictures/social_media/linkedin.png" alt="linkedin" width="40px">
+                </a>
+            </div>
+        </div>
 
-        <script src="app.js"></script>
-    </div>
+        <div class="copyright">
+            <p>Copyright © 2023 | Tawan Wijanta</p>
+        </div>
+    </footer>
 </body>
 
 </html>
