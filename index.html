@@ -12,24 +12,32 @@
 <body>
     <header>
         <div class="logo">
-            <img src="/assets/pictures/logo.png" alt="logo" width="160px">
+            <img src="/assets/pictures/logo.png" alt="logo">
         </div>
     </header>
 
     <div class="body-container">
-        <nav>
-            <div class="sidenav">
-                <ul>
-                    <li><a href="#"><strong>BMI คืออะไร</strong></a></li>
-                    <li><a href="#"><strong>BMI Calculator</strong></a></li>
-                    <li><a href="#"><strong>BMI Range</strong></a></li>
-                    <li><a href="#"><strong>BMI with Body Fat</strong></a></li>
-                    <li><a href="#"><strong>obesity</strong></a></li>
-                </ul>
+        <nav class="col-3">
+            <div class="menu">
+                <a class="button" href="#content-1">
+                    <strong>BMI คืออะไร</strong>
+                </a>
+                <a class="button" href="#content-2">
+                    <strong>BMI Calculator</strong>
+                </a>
+                <a class="button" href="#content-3">
+                    <strong>BMI Range</strong>
+                </a>
+                <a class="button" href="#content-4">
+                    <strong>Body Fat</strong>
+                </a>
+                <a class="button" href="#content-5">
+                    <strong>Obesity</strong>
+                </a>
             </div>
         </nav>
 
-        <div class="content">
+        <div class="layout-container col-9">
             <section id="content-1">
                 <div class="content">
                     <div class="content-header">
@@ -60,11 +68,9 @@
                                     2</strong>
                                 ซึ่งสูตรนี้สามารถใช้ได้ทั้งผู้หญิงและผู้ชาย
                             </p>
-                            <blockquote>
-                                <pre>
-                                    <var>BMI</var> = <var>weight(kg)</var> / <var>height(m)<sup>2</sup></var>
-                                </pre>
-                            </blockquote>
+                            <p>
+                                <var>BMI</var> = <var>weight(kg)</var> / <var>height(m)<sup>2</sup></var>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -97,21 +103,21 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
 
-                            <div class="result">
-                                <p id="result">___BMI RESULT___</p>
-                                <p id="status">___BMI STATUS___</p>
+                        <div class="result">
+                            <p id="result">___BMI RESULT___</p>
+                            <p id="status">___BMI STATUS___</p>
 
-                                <div class="body_img">
-                                    <img src="./assets/pictures/body_shapes/underweight_color.png"
-                                        alt="underweight_color.png" id="underweight" width="150px">
-                                    <img src="./assets/pictures/body_shapes/weight_color.png" alt="weight_color.png"
-                                        id="weight" width="150px">
-                                    <img src="./assets/pictures/body_shapes/overweight_color.png"
-                                        alt="overweight_color.png" id="overweight" width="150px">
-                                    <img src="./assets/pictures/body_shapes/fat_color.png" alt="fat_color.png" id="fat"
-                                        width="150px">
-                                </div>
+                            <div class="body_img">
+                                <img src="./assets/pictures/body_shapes/underweight_color.png"
+                                    alt="underweight_color.png" id="underweight" width="150px">
+                                <img src="./assets/pictures/body_shapes/weight_color.png" alt="weight_color.png"
+                                    id="weight" width="150px">
+                                <img src="./assets/pictures/body_shapes/overweight_color.png" alt="overweight_color.png"
+                                    id="overweight" width="150px">
+                                <img src="./assets/pictures/body_shapes/fat_color.png" alt="fat_color.png" id="fat"
+                                    width="150px">
                             </div>
                         </div>
                     </div>
@@ -130,7 +136,7 @@
                         <div class="weight" id="underweight">
                             <div class="weight-img">
                                 <img src="/assets/pictures/body_shapes/underweight_color.png"
-                                    alt="underweight body_shape" width="100px">
+                                    alt="underweight body_shape">
                             </div>
                             <p class="range_number">
                                 <strong>น้อยกว่า 18.5</strong>
@@ -143,8 +149,7 @@
                         </div>
                         <div class="weight" id="normalweight">
                             <div class="weight-img">
-                                <img src="/assets/pictures/body_shapes/weight_color.png" alt="weight body_shape"
-                                    width="100px">
+                                <img src="/assets/pictures/body_shapes/weight_color.png" alt="weight body_shape">
                             </div>
                             <p class="range_number">
                                 <strong>18.5 - 24.9</strong>
@@ -156,8 +161,8 @@
                         </div>
                         <div class="weight" id="overweight">
                             <div class="weight-img">
-                                <img src="/assets/pictures/body_shapes/overweight_color.png" alt="overweight body_shape"
-                                    width="100px">
+                                <img src="/assets/pictures/body_shapes/overweight_color.png"
+                                    alt="overweight body_shape">
                             </div>
                             <p class="range_number">
                                 <strong>25 - 29.9</strong>
@@ -170,8 +175,7 @@
                         </div>
                         <div class="weight" id="obese">
                             <div class="weight-img">
-                                <img src="/assets/pictures/body_shapes/fat_color.png" alt="obese body_shape"
-                                    width="100px">
+                                <img src="/assets/pictures/body_shapes/fat_color.png" alt="obese body_shape">
                             </div>
                             <p class="range_number">
                                 <strong>ตั้งแต่ 30 ขึ้นไป</strong>
@@ -204,10 +208,10 @@
                         </p>
                         <ul>
                             <li>
-                                ปริมาณไขมันสำหรับ “ผู้ชาย” = (1.2 x BMI) + (0.23 x Age) – 16.2
+                                Body Fat <strong>(Male)</strong> = (1.2 x BMI) + (0.23 x Age) – 16.2
                             </li>
                             <li>
-                                ปริมาณไขมันสำหรับ “ผู้หญิง” = (1.2 x BMI) + (0.23 x Age) – 5.4
+                                Body Fat <strong>(Female)</strong> = (1.2 x BMI) + (0.23 x Age) – 5.4
                             </li>
                         </ul>
                         <p>
@@ -424,26 +428,23 @@
 
     <footer>
         <div class="logo">
-            <img src="/assets/pictures/logo.png" alt="logo" width="160px">
+            <img src="/assets/pictures/logo.png" alt="logo">
         </div>
 
         <div class="line"></div>
 
         <div class="social">
-            <div class="social-icon">
-                <a href="#">
-                    <img src="/assets/pictures/social_media/facebook.png" alt="facebook" width="40px">
+            < href="#" <img src="/assets/pictures/social_media/facebook.png" alt="facebook">
                 </a>
                 <a href="#">
-                    <img src="/assets/pictures/social_media/instagram.png" alt="instagram" width="40px">
+                    <img src="/assets/pictures/social_media/instagram.png" alt="instagram">
                 </a>
                 <a href="#">
-                    <img src="/assets/pictures/social_media/github.png" alt="github" width="40px">
+                    <img src="/assets/pictures/social_media/github.png" alt="github">
                 </a>
                 <a href="#">
-                    <img src="/assets/pictures/social_media/linkedin.png" alt="linkedin" width="40px">
+                    <img src="/assets/pictures/social_media/linkedin.png" alt="linkedin">
                 </a>
-            </div>
         </div>
 
         <div class="copyright">
